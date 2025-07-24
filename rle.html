@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compressor RLE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Ferramenta de Compressão RLE (Run-Length Encoding)</h1>
+
+  <main class="main-container">
+    <section class="card">
+      <h2>1. Comprimir Arquivo</h2>
+      <p>Selecione um arquivo para aplicar a compressão RLE.</p>
+      <input type="file" id="fileInputCompress" aria-label="Seletor de arquivo para compressão">
+      <button id="compressButton">Comprimir e Baixar</button>
+      <p class="info" id="compressInfo" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+      <h2>2. Descomprimir Arquivo</h2>
+      <p>Selecione um arquivo comprimido com RLE para reverter ao original.</p>
+      <input type="file" id="fileInputDecompress" aria-label="Seletor de arquivo para descompressão">
+      <button id="decompressButton">Descomprimir e Baixar</button>
+      <p class="info" id="decompressInfo" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Implementação para atividade da UND II. Aula de 25/07.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
